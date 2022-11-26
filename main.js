@@ -81,7 +81,7 @@ async function Choices() {
     console.log("16.Mostrar por consola el alumno de la clase con las mejores notas.")
     console.log("17.Mostrar por consola la nota media más alta de la clase y el nombre del alumno al que pertenece.")
     console.log("18.Añadir un punto extra a cada nota existente de todos los alumnos.")
-      try {
+    try {
           counter++
           numberChoice = await selectedNumber()
           console.log("La opción seleccionada es."+numberChoice)
@@ -203,7 +203,7 @@ async function Choices() {
       break;
   }
   
-  }while ( numberChoice > 0 && numberChoice < 15) 
+  }while ( numberChoice > 0 && numberChoice < 16) 
 }
 Choices()
 
