@@ -1,3 +1,23 @@
+/*module.exports ={
+  studentsTable,
+  numberOfStudents,
+  nameOfStudents,
+  laststudent,
+  calculateRandomNumber,
+  ramdomStudent,
+  random,
+  femaleStudents,
+  girlStudents,
+  boyStudents,
+  allfemale,
+  selectedAge,
+  randomAlum,
+  randomName,
+  randomAge,
+  genero,
+  gener,
+}*/
+
 
 const students = [{
     age: 32,
@@ -37,18 +57,18 @@ const availableNames = ['pepe', 'juan', 'victor', 'Leo', 'francisco', 'carlos','
 
 // 1 mostrar en formato tabla los alumnos
 
-const formTable=console.table(students)
+const studentsTable = console.table(students)
 
 //2 mostrar por consola la cantidad de alumnos que hay en la clase
 
 const numberOfStudents=console.log('El numero de alumnnos es:',students.length)
 
 //3 mostrar todos los nombres de los alumnos
-const nameOfStudents=students.forEach(studentsName=>{console.log('Nombre del alumno:',studentsName.name)});
+const nameOfStudents = students.forEach(studentsName=>{console.log('Nombre del alumno:',studentsName.name)});
 
 
 //4 eliminar el ultimo alumno de la clase
-const laststudent= students.pop()
+const laststudent = students.pop()
 console.table(students)
   
 //5 eliminar un alumno aleatorio
