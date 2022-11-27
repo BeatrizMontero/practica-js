@@ -69,8 +69,6 @@ function calculateRandomNumber(min, max) {
   return randomNumber;
 }
 async function Choices() {
-  //const availableNumber = numberChoice(0, 15)
-  
   let counter = 0
   let numberChoice
   do {

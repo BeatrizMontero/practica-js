@@ -152,19 +152,3 @@ const order=students.sort(function (a, b) {
    return 0;
 }});
 console.log('Los alumnos ordenados alfabeticamente son:',order)
-
-
-
-
-
-
-
-//OPCIONALES
-
-//16 Mostrar por consola el alumno de la clase con las mejores notas.
-//const  = students.(person =>person.age===students.age)
-//const studentNote= Math.max(note)
-//console.log(studentNote.name)
-//17 Mostrar por consola la nota media más alta de la clase y el nombre del alumno al que pertenece.
-//18 Añadir un punto extra a cada nota existente de todos los alumnos. Recordad que la nota máxima posible es 10. 
-//Si los alumnos aún no tienen registrada ninguna nota, les pondremos un 10
