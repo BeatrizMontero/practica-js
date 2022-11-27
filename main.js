@@ -8,6 +8,18 @@ const students = [{
   name: 'edu'
 },
 {
+  age: 39,
+  examScores: [],
+  gender: 'female',
+  name: 'luisa'
+},
+{
+  age: 25,
+  examScores: [],
+  gender: 'male',
+  name: 'victor'
+},
+{
   age: 29,
   examScores: [],
   gender: 'female',
@@ -78,16 +90,14 @@ async function Choices() {
     console.log("13.Mostrar por consola la edad media de las chicas de la clase.")
     console.log("14.Añadir nueva nota a los alumnos. Por cada alumno de la clase")
     console.log("15.Ordenar el array de alumnos alfabéticamente según su nombre.")
-    console.log("16.Mostrar por consola el alumno de la clase con las mejores notas.")
-    console.log("17.Mostrar por consola la nota media más alta de la clase y el nombre del alumno al que pertenece.")
-    console.log("18.Añadir un punto extra a cada nota existente de todos los alumnos.")
+    
     try {
           counter++
           numberChoice = await selectedNumber()
-          console.log("La opción seleccionada es."+numberChoice)
+          console.log("Opción"+numberChoice)
 
       } catch (error) {
-          console.log("No has metido un numero y se cancela la ejecuion")
+          console.log("No has metido un numero y se cancela la ejecucion.")
           process.exit(0)
       }
       switch(numberChoice) {
@@ -175,7 +185,7 @@ async function Choices() {
           return item.examScores
         })
         console.log(students)
-         break;
+        break;
       case 15:
         const order=students.sort(function (a, b) {
           if (a.name > b.name) {
@@ -189,18 +199,9 @@ async function Choices() {
         }});
         console.log('Los alumnos ordenados alfabeticamente son:',order)
          break;
-     /* case 16:
-        console.log()
-         break;
-      case 17:
-        console.log()
-         break;
-      case 18:
-        console.log()
-         break;*/     
       default:
         console.log('Aplicacion cerrada.')
-      break;
+        break;
   }
   
   }while ( numberChoice > 0 && numberChoice < 16) 

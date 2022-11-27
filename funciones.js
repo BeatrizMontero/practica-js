@@ -1,24 +1,3 @@
-/*module.exports ={
-  studentsTable,
-  numberOfStudents,
-  nameOfStudents,
-  laststudent,
-  calculateRandomNumber,
-  ramdomStudent,
-  random,
-  femaleStudents,
-  girlStudents,
-  boyStudents,
-  allfemale,
-  selectedAge,
-  randomAlum,
-  randomName,
-  randomAge,
-  genero,
-  gener,
-}*/
-
-
 const students = [{
     age: 32,
     examScores: [],
@@ -108,7 +87,7 @@ const genero = availableMaleNames.indexOf(randomName);
 let gener=""
 if(genero == -1 ){
   
-  //console.log("Dentro de la condicion")
+  
   gener = "female"
  
 }else{
@@ -116,7 +95,7 @@ if(genero == -1 ){
   gener = "male"
   
 }
-//console.log(gener)
+
 
 const newStudent = {
   age:randomAge, 
@@ -128,23 +107,16 @@ const newStudent = {
 console.log("Nuevo estudiante:",newStudent)
 
 
-//11 Mostrar por consola el nombre de la persona más joven de la clase.//para mañana 
-//const youngPerson=students.filter(person=>person.age === Math.min(students))
-//students.forEach(i=>console.log("edades:"+i.age))
-let edadMinima = 999
+//11 Mostrar por consola el nombre de la persona más joven de la clase.
+let edadMin = 999
 let nombre
 students.forEach(function(element){
   let edad= element.age
-  if(edad < edadMinima){
+  if(edad < edadMin){
     nombre = element.name
   }
 });
 console.log("El alumno mas joven es: "+nombre)
-
-//const ageOfStudents=students.forEach(studentsAge=>{console.log('Nombre del alumno:',studentsAge.age)});
-//console.log("matriz"+ageOfStudents)
-
-//console.log('La persona mas joven es:', youngPerson)
 
 //12 Mostrar por consola la edad media de todos los alumnos de la clase.
 let average = students.reduce((acc, curr) => acc + curr.age, 0) / students.length
@@ -157,9 +129,6 @@ console.log('La edad media de las chicas es:',gAverage)
 
 
 //14  Añadir nueva nota a los alumnos. Por cada alumno de la clase, 
-//const everyExamScores=students.filter(person=>person)
-//console.log(everyExamScores)
-
 const allStudentsExam = students.map(item =>{
 
   item.examScores = calculateRandomNumber(1, 10)
@@ -193,8 +162,9 @@ console.log('Los alumnos ordenados alfabeticamente son:',order)
 //OPCIONALES
 
 //16 Mostrar por consola el alumno de la clase con las mejores notas.
-
+//const  = students.(person =>person.age===students.age)
+//const studentNote= Math.max(note)
+//console.log(studentNote.name)
 //17 Mostrar por consola la nota media más alta de la clase y el nombre del alumno al que pertenece.
-
 //18 Añadir un punto extra a cada nota existente de todos los alumnos. Recordad que la nota máxima posible es 10. 
 //Si los alumnos aún no tienen registrada ninguna nota, les pondremos un 10
